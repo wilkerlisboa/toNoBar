@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: linear-gradient(0deg, #132F7C, #2356E2);
+}
+
+html ::-webkit-scrollbar {
+  width: 5px;
+}
+
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: linear-gradient(0deg, #132F7C, #2356E2);
+}
+
+html ::-webkit-scrollbar-track {
+  background: #ededed;
+}
+
+.container {
+  width: 100%;
+  height: 191vh;
+  background: linear-gradient(0deg, #132F7C, #2356E2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.pedidos {
+  width: 455px;
+  height: 729px;
+  position: fixed;
+  margin-top: -662px;
+  margin-left: 1081px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 88%;
+  height: 100vh;
+  border-left: solid white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#name {
+  margin: 100px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
+  border-style: none;
+  outline: none;
+  margin-top: -300px;
+  position: absolute;
+}
+
+#mesa {
+  padding: 10px;
+  width: 300px;
+  margin-top: -287px;
+  position: absolute;
+  border-radius: 6px;
+  border-style: none;
+  outline: none;
+}
+
+#comprar {
+  padding: 10px;
+  width: 140px;
+  margin-top: 454px;
+  margin-left: 170px;
+  position: absolute;
+  border-radius: 6px;
+  border-style: none;
+  outline: none;
+  font-family: cursive;
+  cursor: pointer;
+  background: #5DFF00;
+  color: black;
+}
+
+#cancelar {
+  width: 140px;
+  padding: 10px;
+  margin-top: 454px;
+  margin-left: -160px;
+  position: absolute;
+  border-radius: 6px;
+  border-style: none;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  font-family: cursive;
+  cursor: pointer;
+  background: #E40E16;
+  color: white;
+}
+
+table {
+  width: 80%;
+  height: 10%;
+  background: white;
+  margin-top: -82px;
+  overflow-y: scroll;
+}
+
+tr {
+  font-family: cursive;
+  padding: 6px;
+  text-align: center;
+}
+
+section {
+  width: 1142px;
+  height: 190vh;
+  margin-left: -454px;
+  margin-top: 8px;
+  position: absolute;
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: fixed;
+  margin-left: -347px;
+  margin-top: -408px;
+}
+
+.total-produto {
+  width: 316px;
+  height: 86px;
+  background: white;
+  position: absolute;
+  margin-top: 240px;
+  border-radius: 3px;
+  font-family: cursive;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.block {
+  width: 168px;
+  height: 195px;
+  background: #50A5D0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 64px;
+  box-shadow: #263039 0px 0px 20px;
+}
+
+.imagem-cardapio {
+  width: 100px;
+  margin-top: -239px;
+  margin-left: -119px;
+  position: absolute;
+}
+
+.name-produto {
+  position: absolute;
+  margin-top: -104px;
+  font-size: x-large;
+  color: white;
+}
+
+.preco-produto {
+  position: absolute;
+  margin-top: -171px;
+  margin-left: 118px;
+  font-size: larger;
+  color: white;
+}
+
+.descricao {
+  color: white;
+}
+
+.button-cardapio {
+  padding: 12px;
+  font-family: cursive;
+  position: absolute;
+  margin-top: 130px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=cliente.css.map */

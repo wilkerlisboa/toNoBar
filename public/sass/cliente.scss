@@ -1,0 +1,78 @@
+@import "./variavel.scss";
+@import "./mixin.scss";
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: $background;
+}
+html ::-webkit-scrollbar {
+    width: 5px;
+}
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: $background;
+}
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+}
+.container{
+    @include container-cliente();
+}
+.pedidos{
+    @include pedidos-cliente();
+}
+form{
+    @include formes-cliente();
+}
+#name{
+    @include name-cliente();
+}
+#mesa{
+    @include mesa-cliente();
+}
+#comprar{
+    @include compra-cliente();
+}
+#cancelar{
+    @include cancelar-cliente();
+}
+table{
+    @include tabela-cliente();
+}
+tr{
+    @include linha-cliente();
+}
+section{
+    @include section-of-cliente();
+}
+.logo{
+    position: fixed;
+    margin-left: -347px;
+    margin-top: -408px;
+}
+.total-produto{
+    @include calculoTotal();
+}
+.block{
+    @include blocos-de-itens();
+}
+.imagem-cardapio{
+    @include imagem-cardapio();
+}
+.name-produto{
+    @include nome-produto();
+}
+.preco-produto{
+    @include preco-cardapio();
+}
+.descricao{
+    color: $color-white;
+}
+.button-cardapio{
+    @include boton-cardapio();
+}

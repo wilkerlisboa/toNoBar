@@ -1,0 +1,9 @@
+@import "./mixin.scss";
+@import "./variavel.scss";
+
+section{
+    @include section-of-mesa();
+}
+.mesa{
+    @include div-mesa();
+}

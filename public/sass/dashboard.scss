@@ -1,0 +1,40 @@
+@import "./variavel.scss";
+@import "./mixin.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    @include container-dashboard();
+}
+.buttons{
+    @include buttons-of-dashboard();
+}
+.campo{
+    @include campo-of-buttons-inside-buttons();
+}
+.imagem-home{
+    @include imagem-home-of-dashboard();
+}
+#usuario{
+    @include id-usuarios-inside-dashboard();
+}
+table{
+    @include tabela-funcionario();
+}
+#form-cadastra-produto{
+    @include form-cadastra();
+}
+.campo{
+    @include compo-do-form-produto();
+}
+.button-cadastro{
+    @include botao-cadastro();
+}
+.text-cadastro{
+    @include text-bloco-cadastro();
+}
+.otto{
+    @include imagem-otto();
+}

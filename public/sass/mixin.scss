@@ -1,0 +1,346 @@
+@import './variavel.scss';
+// HOME PAGE
+@mixin container{
+    width: 100%;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+@mixin funcionarios{
+    padding: 15px;
+    background: $color-red;
+    width: 174px;
+    color: $background-bottons;
+    margin-top: 181px;
+    text-decoration: none;
+    font-size: medium;
+    font-family: $font-family-all-page;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+@mixin clientes{
+    padding: 15px;
+    background: #FED519;
+    width: 174px;
+    color: black;
+    text-decoration: none;
+    font-size: medium;
+    font-family: $font-family-all-page;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+@mixin logo{
+    width: 241px;
+    height: 200px;
+    background-image: $imagem-logo;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    margin-top: -314px;
+}
+// LOGIN
+@mixin page-login{
+    width: 100%;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+// DASHBOARD
+@mixin container-dashboard{
+    width: 100%;
+    height: 100vh;
+    background: $background;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+@mixin buttons-of-dashboard{
+    width: 271px;
+    height: 100vh;
+    margin-left: -80%;
+    border-right: $color-white solid;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin campo-of-buttons-inside-buttons{
+    width: 164px;
+    padding: 16px;
+    display: flex;
+    border-radius: 4px;
+    border-style: none;
+    outline: none;
+    font-family: $font-family-all-page;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+@mixin imagem-home-of-dashboard{
+    width: 260px;
+    opacity: 0.7;
+    margin-top: -100px;
+    margin-left: 247px;
+    position:fixed;
+}
+@mixin id-usuarios-inside-dashboard{
+    margin-top: -635px;
+    margin-left: -1195px;
+    position: absolute;
+    font-family: $font-family-all-page;
+    color: white;
+}
+@mixin tabela-funcionario{
+    position: absolute;
+    width: 772px;
+    margin-top: -84px;
+    font-family: $background;
+    margin-left: 143px;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: $font-family-all-page;
+}
+// CLIENTE
+@mixin container-cliente{
+    width: 100%;
+    height: 191vh;
+    background: $background;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin pedidos-cliente{
+    width: 455px;
+    height: 729px;
+    position: fixed;
+    margin-top: -662px;
+    margin-left: 1081px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin formes-cliente{
+    width: 88%;
+    height: 100vh;
+    border-left: solid $color-white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin name-cliente{
+    margin: 100px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 6px;
+    border-style: none;
+    outline: none;
+    margin-top: -300px;
+    position: absolute;
+}
+@mixin mesa-cliente{
+    padding: 10px;
+    width: 300px;
+    margin-top: -287px;
+    position: absolute;
+    border-radius: 6px;
+    border-style: none;
+    outline: none;
+}
+@mixin compra-cliente{
+    padding: 10px;
+    width: 140px;
+    margin-top: 454px;
+    margin-left: 170px;
+    position: absolute;
+    border-radius: 6px;
+    border-style: none;
+    outline: none;
+    font-family: cursive;
+    cursor: pointer;
+    background: $color-green;
+    color: $color-black;
+}
+@mixin cancelar-cliente{
+    width: 140px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 454px;
+    margin-left: -160px;
+    position: absolute;
+    border-radius: 6px;
+    border-style: none;
+    outline: none;
+    font-family: $font-family-all-page;
+    cursor: pointer;
+    background: $color-red;
+    color: $color-white;
+}
+@mixin tabela-cliente{
+    width: 80%;
+    height: 10%;
+    background: $color-white;
+    margin-top: -82px;
+    overflow-y: scroll;
+}
+@mixin linha-cliente{
+    font-family: $font-family-all-page;
+    padding: 6px;
+    text-align: center;
+}
+@mixin section-of-cliente{
+    width: 1142px;
+    height: 190vh;
+    margin-left: -454px;
+    margin-top: 8px;
+    position: absolute;
+    font-family: $font-family-all-page;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+@mixin calculoTotal{
+    width: 316px;
+    height: 86px;
+    background: $color-white;
+    position: absolute;
+    margin-top: 240px;
+    border-radius: 3px;
+    font-family: $font-family-all-page;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+@mixin blocos-de-itens{
+    width: 168px;
+    height: 195px;
+    background: $color-block;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 64px;
+    box-shadow: #263039 0px 0px 20px;
+}
+@mixin imagem-cardapio{
+    width: 100px;
+    margin-top: -239px;
+    margin-left: -119px;
+    position: absolute;
+}
+@mixin preco-cardapio{
+    position: absolute;
+    margin-top: -171px;
+    margin-left: 118px;
+    font-size: larger;
+    color: $color-white;
+}
+@mixin nome-produto{
+    position: absolute;
+    margin-top: -104px;
+    font-size: x-large;
+    color: $color-white;
+}
+@mixin boton-cardapio{
+    padding: 12px;
+    font-family: $font-family-all-page;
+    position: absolute;
+    margin-top: 130px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+}
+@mixin form-cadastra{
+    color: $color-white;
+    position: absolute;
+    width: 208px;
+    height: 299px;
+    background: $color-black;
+    padding: 40px;
+    margin-left: 263px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin compo-do-form-produto{
+    padding: 10px;
+    font-family: cursive;
+    border-style: none;
+    outline: none;
+}
+@mixin botao-cadastro{
+    width: 100px;
+    padding: 10px;
+    background: $color-yellow;
+    border-style: none;
+    outline: none;
+    border-radius: 5px;
+}
+@mixin imagem-otto{
+    margin-top: 254px;
+    width: 328px;
+    margin-left: 644px;
+    position: absolute;
+}
+@mixin text-bloco-cadastro{
+    margin-top: -298px;
+    position: absolute;
+    font-family: cursive;
+}
+@mixin section-of-mesa{
+    width: 50%;
+    height: 93vh;
+    position: absolute; 
+}
+@mixin div-mesa{
+    width: 307px;
+    height: 214px;
+    background: blue;
+}
